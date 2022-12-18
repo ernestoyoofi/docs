@@ -1,4 +1,5 @@
 import "nextra-theme-docs/style.css"
+import { useEffect } from "react"
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
