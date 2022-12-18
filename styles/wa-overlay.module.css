@@ -1,0 +1,38 @@
+.background_box {
+  background-image: url(/background-wa.png);
+  background-repeat: repeat;
+  padding: 6px 12px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 3px 0px;
+}
+.box_chat * {
+  font-size: 13.8px;
+  font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+  color: #000000;
+}
+.box_chat {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.chat_assign {
+  display: flex;
+  margin-right: 9px;
+}
+.chat_assign .tail {
+  margin-right: -8px;
+}
+.chat_assign .message {
+  background-color: #d9fdd3;
+  padding: 3px 7px;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0,0.1) 0px 1px 2px;
+}
+.chat_assign .message .image {
+  margin-top: 4px;
+  margin-bottom: 3px;
+  max-width: 240px;
+  border-radius: 4px;
+  overflow: hidden;
+}
