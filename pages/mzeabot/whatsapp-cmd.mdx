@@ -1,0 +1,100 @@
+import { Callout } from 'nextra-theme-docs'
+import WhatsApp from "../../comp/wa-overlay"
+import ListParams from "../../comp/list-params"
+
+## List Command / Perintah
+
+> Perfix <br />
+> !, #, $, /, .
+
+- Menu
+  - Akun
+    - [!daftar](#daftar)
+    - [!profile](#profile)
+    - [!cari-orang](#cari-orang)
+    - [!edit-akun](#edit-akun)
+  - Media
+    - [!stiker](#stiker)
+  - Grup
+    - [!daftar-org](#daftar-org)
+    - [!ajak-org](#ajak-org)
+    - [!add-us](#add)
+    - [!remove-us](#remove-us)
+
+## Akun
+
+## !daftar
+
+<WhatsApp data={{
+  message: "!daftar <nama>|<bio?>"
+}} />
+
+<ListParams data={[
+  {
+    name: "name",
+    typeOf: "string",
+    require: true,
+    desc: "Isi nama untuk menjadi nama utama akun"
+  },
+  {
+    name: "bio",
+    typeOf: "string",
+    desc: "Bio atau deskripsi akun"
+  }
+]} title="Parameter"/>
+
+## !profile
+
+<WhatsApp data={{
+  message: "!profile <phone?>"
+}} />
+
+<ListParams data={[
+  {
+    name: "phone",
+    typeOf: "number",
+    desc: "Isi nomer untuk track profile lainnya, namun tidak dapat melihat secara detail"
+  }
+]} title="Parameter"/>
+
+## !cari-orang
+
+<WhatsApp data={{
+  message: "!cari-orang <text>"
+}} />
+
+<ListParams data={[
+  {
+    name: "text",
+    typeOf: "string",
+    require: true,
+    desc: "Isi perintah pada teks untuk mencari lebih detail"
+  }
+]} title="Parameter"/>
+
+## !edit-akun
+
+<WhatsApp data={{
+  message: "!edit-akun <type[]> <value||switch>"
+}} />
+
+<ListParams data={[
+  {
+    name: "type",
+    typeOf: "string",
+    require: true,
+    desc: "Isi tipe untuk memilih untuk yang diedit"
+  },
+  {
+    name: "value",
+    typeOf: "string",
+    require: true,
+    desc: "Nilai untuk hasil data dengan bentuk kata"
+  },
+  {
+    name: "switch",
+    typeOf: "boolean",
+    require: true,
+    desc: "Tipe untuk saklar"
+  }
+]} title="Parameter"/>
