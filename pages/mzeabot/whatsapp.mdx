@@ -3,65 +3,28 @@ import WhatsApp from "../../comp/wa-overlay.js"
 
 ## Overview
 
-Halo, selamat datang disesi dokumentasi !
-Halaman ini digunakan untuk memahami dan mempelajari apa saja yang ada dimzeabot
-
-[Coba Beta Test › ](https://wa.me/6281227150581)
-
-<WhatsApp data={{ message: "Hai ! 👋" }} />
-
-## Tentang update
-
-Mzeabot telah update ke versi 4.1 (Early Access) 🎉.
-Update apa saja yang ada?
-
-- Simple dan ringan untuk handle chat
-- Mengurangi masalah looping session
-- Sintax yang sederhana
-- Adanya library baru
-- Menghapus extenal lama yang harus melewati webhook
-- Menggunakan websocket sebagai interiaksi secara langsung di 3 platfrom
-- Mengubah database dari sql (shell query language) menjadi nonsql / document (json types)
-
-## Permasalahan yang sering diberikan
-
-<Callout type="error">
-Sering menemukan masalah kode angka pada bot, dan tidak bisa diselesaikan?
-kontak [owner]() untuk melanjuti tindakan
-</Callout>
-
-Contoh pesan gagal dari bot
-
 <WhatsApp
   data={{
-    message: "MzeabotError: (403) Bad Validate",
+    message: "Hai halo!, Selamat datang disesi dokumentasi",
     button: [{
-      type: "link",
-      value: "https://mzea.docs.vercel.app/mzeabot/whatsapp#permasalahan-yang-sering-diberikan",
-      text: "Baca lebih lanjut"
+      text: "🏷 Perintah",
+      url: "#perintah"
     }]
   }}
 />
 
-Kode yang mungkin diberikan
+Halo, selamat datang disesi dokumentasi !
+Halaman ini digunakan untuk memahami dan mempelajari apa saja yang ada dimzeabot
 
-- 1** Normal / Sudah ada data dari server
-- 2** Sukses / Berhasil
-- 3** Sintax atau client bot mengalami masalah
-- 4** Bermasalah pada user
-- 5** Kesalahan server
+## Tentang update
 
-| Status | Detail Tipe           | Pesan yang diberikan |
-|--------|-----------------------|----------------------|
-| 102    | "NORMAL_AND_NO_ERROR" | Tidak ada masalah yang terkait |
-| 104    | "NORMAL_AND_NO_ERROR" | Tidak ada masalah yang terkait |
-| 106    | "NORMAL_AND_NO_ERROR" | Tidak ada masalah yang terkait |
-| 200    | "SUCCESS_READING"     | Berhasil membaca data dari server |
-| 200    | "USER_REGISTER"       | User berhasil terdaftar didatabase |
-| 204    | "USER_NO_REGISTER"    | Data user tidak ada didatabase |
-| 403    | "BAD_VALIDATE"        | Parameter atau queris tidak valid  |
-| 405    | "PARAMS_RETURN_NOT_TYPE" | Mungkin beberapa parameter atau queris meminta format yang sesuai, seperti `string`, `number`, `boolean`, `object`, atau `datetime` |
-| 411    | "PARAMS_RETURN_UNDEFINED" | Parameter yang keluar adalah undefined / tidak ada / kosong |
-| 415    | "" | Pengguna / user tidak dapat mengakses karena tidak diperbolehkan |
-| 500    | "" | Mesin internal mengalami error |
-| 502    | "" | Sesi bot telah kadaluarsa, minta yang baru |
+Mzeabot telah update ke versi 4.15.20
+Update apa saja yang ada?
+
+- Simple untuk handle chat
+- Mengurangi masalah looping session
+- Sintax yang sederhana
+- Menggunakan websocket sebagai interiaksi secara langsung di 3 platfrom
+- Mengubah database dari sql (shell query language) menjadi nonsql / document (json types)
+
+## Perintah
